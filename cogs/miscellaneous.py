@@ -26,7 +26,7 @@ class Miscellaneous(commands.Cog):
     @commands.command()
     async def help(self, ctx):
       embed=discord.Embed(color=0xf0f40b)
-      embed.add_field(name="🎲 Game commands", value="`coinflip`, `jackpot`, `highlow`", inline=False)
+      embed.add_field(name="🎲 Game commands", value="`coinflip`, `jackpot`, `highlow`, `slots`", inline=False)
       embed.add_field(name="⚙️ Other commands", value="`balance`, `top`, `daily`, `search` \n\nBot prefix is: $", inline=True)
       await ctx.channel.send(embed=embed)
     
