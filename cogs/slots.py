@@ -5,6 +5,7 @@ import math
 import main
 
 from discord.ext import commands
+from discord.ext.commands import BucketType
 
 ###########################################
 #░██████╗██╗░░░░░░█████╗░████████╗░██████╗#
@@ -20,6 +21,7 @@ class Slots(commands.Cog):
         self.bot = bot
 
     @commands.command()
+    @commands.cooldown(1, 10, BucketType.user)
     async def slots(self, ctx, arg):
 
         slotItems = ['💯', '💰', '💵', '🏅', '💎']
